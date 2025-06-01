@@ -1,44 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="script.js"></script>
     <script type="module" src="storage.js"></script>
     <title>Spaced Repetition Tracker</title>
   </head>
   <body>
     <header>
-        <h1 id="title">Spaced Repetition Tracker</h1>
+      <h1 id="title">Spaced Repetition Tracker</h1>
     </header>
     <main>
-        <!-- User Selection -->
-        <label for="user-select">Select User:</label>
-        <select id="user-select">
-            <!-- Options will be populated dynamically -->
-        </select>
-        <!-- Add Topic Form -->
-        <h2>Add New Topic</h2>
-        <form id="add-topic-form">
-            <label for="topic-name">Topic Name:</label>
-            <input type="text" id="topic-name" name="topic-name" placeholder="write your topic" required />
+      <!-- User Selection -->
+      <label for="user-select">Select User:</label>
+      <select id="user-select"></select>
 
-            <label for="start-date">Start Date:</label>
-            <input type="date" id="start-date" name="start-date" required />
+      <!-- Add Topic Form -->
+      <h2>Add New Topic</h2>
+      <form id="add-topic-form">
+        <label for="topic-name">Topic Name:</label>
+        <input type="text" id="topic-name" name="topic-name" placeholder="write your topic" required />
 
-            <button type="submit">Submit</button>
-        </form>
-        <br><br>
-        <hr>
-        <div>
-          <button type="submit" id="delete-agenda">Delete All Agenda</button>
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date" name="start-date" required />
 
-        </div>
-        <!-- Agenda Display -->
-        <div id="agenda-container">
-            <h2>Agenda</h2>
-            <div id="agenda">Please select a user.</div>
-        </div>
+        <button type="submit">Submit</button>
+      </form>
+
+      <br><br><hr>
+
+      <!-- Agenda Display -->
+      <div id="agenda-container">
+        <h2>Agenda</h2>
+        <div id="agenda">Please select a user.</div>
+      </div>
     </main>
   </body>
 </html>
